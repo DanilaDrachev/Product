@@ -35,6 +35,38 @@ class ProductManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+    @Test
+    public void searchWhenOneProdactsFinded() {
+        Repository repo = new Repository();
+        ProductManager manager = new ProductManager(repo);
+        Book book1 = new Book(1, "Harry Potter 1", 300, "Rowlling");
+        Book book2 = new Book(2, "Tanya Grotter 2", 300, "Rowlling");
+        Book book3 = new Book(3, "Tanya Grotter", 300, "Rowlling");
+        manager.add(book1);
+        manager.add(book2);
+        manager.add(book3);
+
+        Product[] actual = manager.searchBy("Harry");
+        Product[] expected = {book1};
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+    @Test
+    public void searchWhenProdactsNoFinded() {
+        Repository repo = new Repository();
+        ProductManager manager = new ProductManager(repo);
+        Book book1 = new Book(1, "Tanya Grotter 1", 300, "Rowlling");
+        Book book2 = new Book(2, "Tanya Grotter 2", 300, "Rowlling");
+        Book book3 = new Book(3, "Tanya Grotter", 300, "Rowlling");
+        manager.add(book1);
+        manager.add(book2);
+        manager.add(book3);
+
+        Product[] actual = manager.searchBy("Harry");
+        Product[] expected = {};
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 
     @Test
     public void removeWhenProductExist() {

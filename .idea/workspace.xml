@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94e0e317-602d-4dca-a15c-e81985bdaca7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
       <command value="mvn test verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductManagerTest">
+  <component name="RunManager" selected="JUnit.ProductManagerTest.searchWhenProdactsNoFinded">
     <configuration name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Product" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,11 +87,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManagerTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductManagerTest.searchWhenOneProdactsFinded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Product" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
-      <option name="METHOD_NAME" value="testAdd" />
+      <option name="METHOD_NAME" value="searchWhenOneProdactsFinded" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.searchWhenProdactsNoFinded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Product" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
+      <option name="METHOD_NAME" value="searchWhenProdactsNoFinded" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,10 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductManagerTest.searchWhenProdactsNoFinded" />
+        <item itemvalue="JUnit.ProductManagerTest.searchWhenOneProdactsFinded" />
         <item itemvalue="JUnit.ProductManagerTest" />
         <item itemvalue="JUnit.ProductManagerTest.searchWhenFewProdactsFinded" />
         <item itemvalue="JUnit.ProductManagerTest.removeWhenProductExist" />
-        <item itemvalue="JUnit.ProductManagerTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -127,5 +138,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ProductManagerTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
